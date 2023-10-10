@@ -1,11 +1,11 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Schema definitions for Central API entities",
-  "$defs": {
+  "definitions": {
     "PageOfServices": {
       "allOf": [
         {
-          "$ref": "#/$defs/Page"
+          "$ref": "#/definitions/Page"
         },
         {
           "type": "object",
@@ -13,7 +13,7 @@
             "content": {
               "type": "array",
               "items": {
-                "$ref": "#/$defs/Service"
+                "$ref": "#/definitions/Service"
               }
             }
           }
@@ -100,7 +100,7 @@
     "PageOfFeedbacks": {
       "allOf": [
         {
-          "$ref": "#/$defs/Page"
+          "$ref": "#/definitions/Page"
         },
         {
           "type": "object",
@@ -108,7 +108,7 @@
             "content": {
               "type": "array",
               "items": {
-                "$ref": "#/$defs/Feedback"
+                "$ref": "#/definitions/Feedback"
               }
             }
           }
